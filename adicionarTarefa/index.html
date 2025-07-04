@@ -19,7 +19,35 @@
       <h2><span class="material-symbols-outlined iconMenu">format_list_bulleted</span>Minhas Tarefas</h2>
       <h2 class="Sair"><span class="material-symbols-outlined iconSair">logout</span>Sair</h2>
     </aside>
-    <section>
+    <section class="adicionarTarefas">
+      <h1>Adicionar Tarefas</h1>
+      <form class="formTarefa">
+        <!--Campo Título-->
+        <div class="campoTarefa">
+          <label class="labelTitulo">Título</label>
+          <input type="text" name="titulo" class="inputTexto" required>
+        </div>
+        <!--Campo Prioridade-->
+        <div class="campoTarefa">
+          <label class="labelTitulo">Prioridade</label>
+          <div class="grupoRadio">
+            <label class="labelRadio"><input type="radio" name="prioridade" class="inputRadio" value="baixa"> Baixa</label>
+            <label class="labelRadio"><input type="radio" name="prioridade" class="inputRadio" value="media"> Média</label>
+            <label class="labelRadio"><input type="radio" name="prioridade" class="inputRadio" value="alta"> Alta</label>
+          </div>
+        </div>
+        <!--Campo Status-->
+        <div class="campoTarefa">
+          <label class="labelTitulo">Status</label>
+          <div class="grupoRadio">
+            <label class="labelRadio"><input type="radio" name="status" class="inputRadio" value="andamento"> Em andamento</label>
+            <label class="labelRadio"><input type="radio" name="status" class="inputRadio" value="concluida"> Concluída</label>
+          </div>
+        </div>
+        <div class="campoSalvar">
+          <button type="submit" class="inputSalvar">Salvar</button>
+        </div>
+      </form>
     </section>
   </div>
 </body>

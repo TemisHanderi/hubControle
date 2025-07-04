@@ -92,6 +92,7 @@ body {
   justify-content: center;
   align-items: flex-start;
   width: 78%;
+  height: 89vh;
 }
 
 .mensagem h1 {
