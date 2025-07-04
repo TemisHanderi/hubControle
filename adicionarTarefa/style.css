@@ -84,17 +84,3 @@ body {
   width:75%;
   gap: 4%;
 }
-
-/*Mensagem de boas vindas*/
-
-.mensagem {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  width: 78%;
-}
-
-.mensagem h1 {
-  font-size: 2.8rem;
-  padding-top: 5%;
-}
