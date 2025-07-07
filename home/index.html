@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hub de Controle</title>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="fade">
+  <header class="barraTopo">
+    <div class="barraEscura">
+      <div>
+        <h1 id="botaoHome"><span class="material-symbols-outlined iconChave">build</span>Hub de Controle</h1>
+      </div>
+    </div>
+    <h2 id="boasVindas">Olá!</h2>
+  </header>
+  <div class="corpo">
+    <aside class="navLateral">
+      <div>
+        <h2 id="botaoTarefa"><span class="material-symbols-outlined iconMenu">format_list_bulleted</span>Minhas Tarefas</h2>
+      </div>
+      <div>
+        <h2 id="botaoSair" onclick="limparStorage()"><span class="material-symbols-outlined iconSair">logout</span>Sair</h2>
+      </div>
+    </aside>
+    <section class="mensagem">
+      <h1>Bem-vindo ao Hub de Controle!</h1>
+    </section>
+  </div>
+  <script src="script.js" defer></script>
+</body>
+</html>

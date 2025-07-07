@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  background-color: #FCFCFC;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: 'Montserrat', sans-serif;
+  height: 100%;
+}
+
+/*Transição de tela*/
+
+.fade {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+.fade-out {
+  opacity: 0;
+}
+
+/*Header Topo*/
+
+.barraTopo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;           
+  background-color: #26547c;
+  height: 6.5rem;
+  margin: 0;
+}
+
+.barraTopo h2 {
+  color: white;
+  font-size: 1.5rem;
+  padding-right: 3%;
+}
+
+.barraEscura {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1F4566;
+  width: 22%;
+  height: 100%;
+}
+
+.iconChave {
+  font-size: 3rem;
+}
+
+.barraEscura div {
+  text-decoration: none;
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.barraEscura div h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  margin: 0;
+  color: white;
+  gap: 2%;
+  width: 100%;
+  padding-right: 5%;
+  cursor: pointer;
+}
+
+/*Corpo abaixo da barra topo*/
+
+.corpo {
+  display: flex;
+  height: 89vh;
+}
+
+/*Navegador Lateral*/
+
+.navLateral {
+  display: flex;
+  background-color: #EBEBEB;
+  justify-content: center;
+  flex-direction: column;         /*define a direção que os itens são colocados*/
+  align-items: center;
+  width: 22%;
+  height: 89vh;                   /*unidade de medida relativa à altura da viewport*/
+  row-gap: 78%;
+}
+
+.navLateral span {
+  font-size: 1.9rem;
+}
+
+.navLateral div {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+
+.navLateral div h2 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 1.5rem;
+  margin: 0;
+  color: black;
+  width:75%;
+  gap: 4%;
+  cursor: pointer;
+}
+
+/*Mensagem de boas vindas*/
+
+.mensagem {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 78%;
+  height: 89vh;
+}
+
+.mensagem h1 {
+  font-size: 2.8rem;
+  padding-top: 5%;
+}
