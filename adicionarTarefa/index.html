@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hub de Controle</title>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="fade">
+  <header class="barraTopo">
+    <div class="barraEscura">
+      <div>
+        <h1 id="botaoHome"><span class="material-symbols-outlined iconChave">build</span>Hub de Controle</h1>
+      </div>
+    </div>
+    <h2 id="boasVindas">Olá!</h2>
+  </header>
+  <div class="corpo">
+    <aside class="navLateral">
+      <div>
+        <h2 id="botaoTarefa"><span class="material-symbols-outlined iconMenu">format_list_bulleted</span>Minhas Tarefas</h2>
+      </div>
+      <div>
+        <h2 id="botaoSair" onclick="limparStorage()"><span class="material-symbols-outlined iconSair">logout</span>Sair</h2>
+      </div>
+    </aside>
+    <section class="adicionarTarefas">
+      <h1>Adicionar Tarefas</h1>
+      <form class="formTarefa">
+        <!--Campo Título-->
+        <div class="campoTarefa">
+          <label class="labelTitulo">Título</label>
+          <input type="text" id="tituloTarefa" name="titulo" class="inputTexto" required>
+        </div>
+        <!--Campo Prioridade-->
+        <div class="campoTarefa">
+          <label class="labelTitulo">Prioridade</label>
+          <div class="grupoRadio">
+            <label class="labelRadio"><input type="radio" id="prioridadeBaixa" name="prioridade" class="inputRadio" value="baixa"> Baixa</label>
+            <label class="labelRadio"><input type="radio" id="prioridadeMedia" name="prioridade" class="inputRadio" value="media"> Média</label>
+            <label class="labelRadio"><input type="radio" id="prioridadeAlta" name="prioridade" class="inputRadio" value="alta"> Alta</label>
+          </div>
+        </div>
+        <!--Campo Status-->
+        <div class="campoTarefa">
+          <label class="labelTitulo">Status</label>
+          <div class="grupoRadio">
+            <label class="labelRadio"><input type="radio" id="statusAndamento" name="status" class="inputRadio" value="andamento"> Em andamento</label>
+          </div>
+        </div>
+        <div class="campoSalvar">
+          <button type="button" id="botaoSalvar" class="inputSalvar">Salvar</button>
+        </div>
+      </form>
+    </section>
+  </div>
+  <script src="script.js" defer></script>
+</body>
+</html>
