@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.body.classList.add('fade-out');
     setTimeout(() => {
-      window.location.href = "../home/index.html";
+      window.location.href = "home/index.html";
     }, 500); // esperar 0.5s
   });
 });

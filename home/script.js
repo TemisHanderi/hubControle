@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
   botaoSair.addEventListener('click', () => {
         document.body.classList.add('fade-out');
     setTimeout(() => {
-      window.location.href = '../login/index.html';
+      window.location.href = '../index.html';
     }, 500); // espera 0.5 s
   });
 });
